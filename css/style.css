@@ -1,0 +1,98 @@
+/* 
+    Document   : style
+    Created on : Jan 11, 2013, 6:18:27 PM
+    Author     : VipinKumar Dubey
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background-color: #E7EBF3;
+}
+
+.top-bar{
+    background-color: #3B579E;
+    padding:10px 0px 0px 0px;
+}
+
+#wrapper{
+    
+    
+}
+
+.profile-block{background:white;}
+
+.message{background-color: #ffffff; padding:10px;}
+
+.nav-timeline{list-style-type: none;}
+
+.profile-pic{width: 150px;height:150px;}
+
+.thumb{width:100px; height:90px;}
+
+
+.profile-pic-container {
+background: white;
+float: left;
+position: absolute;
+top: 250px;
+left: 180px;
+padding: 5px;
+height: 160px;
+
+}
+
+.short-profile{background:white;padding:10px;}
+
+.user_name{margin-left:200px;width:250px;}
+
+.short-profile_top_right_links{float: right;
+position: relative;
+top: -50px;}
+
+.row_1{height: 50px;}
+
+.short_bio{float:left; width:350px; margin-right: 10px;background-color: #E7EBF3;padding:5px;}
+
+.friends{width: 110px;display: inline-block;}
+.photos{width: 110px;display: inline-block;}
+.likes{width: 110px;display: inline-block;}
+.map{width: 110px;display: inline-block;}
+
+.top-right-nav {list-style-type: none;top: -8px;right: 0px; position: relative;}
+
+.top-right-nav li{float:right}
+
+.cover{width: 830px;}
+
+.share-options{list-style-type:none}
+
+.share-options li{float:left;margin-right: 10px;}
+
+.timeline .left, .timeline .right {width: 400px;}
+
+.timeline .left{float:left}
+
+.timeline .right{float:right;}
+
+.timeline .middle{margin-left: 410px;margin-right: 10px;}
+
+
+.seperator{background-color:graytext;height:600px;width:5px;}
+
+.white{background: white; padding:5px;margin-top: 20px;}
+
+.more{float:right; width:100px;}
+
+.small-user-pic{float:left;width:50px;}
+
+.name-and-update-with-time{margin-left: 60px;height:60px;}
+
+.block-top{border-bottom: 1px solid gainsboro}
+
+.extra-padding{padding:10px;}
+
+.comment-form{margin-left: 60px;height:60px;}
+
+.large{width:370px;}
+
