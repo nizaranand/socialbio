@@ -1,3 +1,11 @@
+<?php 
+                $first_name = $this->session->userdata('first_name'); 
+                $last_name = $this->session->userdata('last_name'); 
+                $name = ucfirst($first_name) ." ".ucfirst($last_name);
+                
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -28,7 +36,7 @@
             <div class="top-bar">
                 <div class="container_24">
                 <div class="left  grid_4">
-                    <a class="site-title" href="#">Facebook</a>
+                    <a class="site-title" href="#">SocialBio</a>
                 </div>
                 <div class="middle  grid_12">
                     <form>
@@ -38,8 +46,21 @@
                 </div>
                 <div class="right grid_8">
                     <ul class="top-right-nav">
-                        <li><a class="site-title" href="#">Vipin Dubey</a></li>
-                        <li><a class="site-title" href="#">Home</a></li>
+                        <?php 
+                            
+                            $is_logged_in = $this->session->userdata('is_logged_in');
+                            if(!isset($is_logged_in) || $is_logged_in != true){ 
+                        ?>
+                            
+                            <li><a class="site-title" href="<?php base_url() ?>login">Log in</a></li>
+                            
+                        <?php }else{ ?>
+                            
+                            <li><a class="site-title" href="<?php base_url() ?>profile"><?php echo $name ?></a></li>
+                            <li><a class="site-title" href="<?php base_url() ?>logout">Log out</a></li>
+                            
+                            
+                        <?php }?>
                         
                     </ul>
                     

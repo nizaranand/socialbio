@@ -5,15 +5,17 @@
     Description:
         Purpose of the stylesheet follows.
 */
-
+/************************** Main Styles + Timeline Page****************************/
 body{
-    background-color: #E7EBF3;
+    
 }
 
 .top-bar{
     background-color: #3B579E;
     padding:10px 0px 0px 0px;
 }
+
+.timeline-page{background-color: #E7EBF3;}
 
 #wrapper{
     
@@ -61,7 +63,11 @@ top: -50px;}
 
 .top-right-nav {list-style-type: none;top: -8px;right: 0px; position: relative;}
 
-.top-right-nav li{float:right}
+.top-right-nav li{float:right; margin-left:10px;}
+
+.site-title{color:white; font-weight: bold; text-decoration: none; font-size: 26px;}
+
+.top-right-nav li a{color:white; font-weight: bold; text-decoration: none; font-size: 12px;}
 
 .cover{width: 830px;}
 
@@ -96,3 +102,102 @@ top: -50px;}
 
 .large{width:370px;}
 
+/***********************************Login Page**********************************/
+
+.login-page{}
+
+.login-form-container{padding: 0px 25px 20px 25px;
+border: 1px solid #c0c0c0;
+width: 400px;
+margin: 150px auto;}
+
+.login-form input[type="text"], .login-form input[type="password"]{
+    
+    display:block;
+    margin:0 0 1em 0;
+    width:280px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    padding:0.7em;
+    border-color: #b3d4fc;
+}
+
+.login-form input[type="submit"], .login-form form a{
+    
+    border:none;
+    margin-right:1em;
+    padding:6px;
+    text-decoration: none;
+    font-size:12px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #5b74a8;
+    color:white;
+    border-color:#29447e #29447e #1a356e;
+}
+
+.login-form h2{border-bottom: 1px solid #c0c0c0;}
+
+.login-form input[type="submit"]:hover, .login-form form a:hover{
+    
+    background:#003399;
+    cursor: pointer;
+}
+
+.error{color:#393939;font-size:15px;}
+
+fieldset{
+    width:300px;
+    margin:auto;
+    margin-bottom:2em;
+    display:block;   
+}
+
+/***********************************Signup Page**********************************/
+
+.signup-page{
+    
+    background-color: #E7EBF3;
+}
+
+.signup-form-container{padding: 0px 25px 20px 25px;
+
+width: 380px;
+margin: 70px auto;}
+
+.signup-form input[type="text"], .signup-form input[type="password"]{
+    
+    display:block;
+    margin:0 0 1em 0;
+    width:280px;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:0.7em;
+    border-color: #b3d4fc;
+}
+
+
+.signup-form input[type="submit"], .signup-form form a{
+    
+    border:none;
+    margin-right:1em;
+    padding:6px;
+    text-decoration: none;
+    font-size:12px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #5b74a8;
+    color:white;
+    border-color:#29447e #29447e #1a356e;
+}
+
+.signup-form h1{border-bottom: 1px solid #c0c0c0;}
+
+.signup-form input[type="submit"]:hover, .signup-form form a:hover{
+    
+    background:#003399;
+    cursor: pointer;
+}
